@@ -10,7 +10,6 @@ declare global {
   namespace Express {
     interface Request {
       currentUser?: UserPayload;
-      files?: Multer.File[];
     }
   }
 }
