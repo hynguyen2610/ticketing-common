@@ -10,10 +10,7 @@
   "scripts": {
     "clean": "del /Q .\\build\\*",
     "build": "npm run clean && tsc",
-    "pub": "npm run validate-message && npm run add && npm version patch && npm run commit --message=\"$npm_config_message\" && npm run build && npm publish",
-    "validate-message": "node -e \"if (!process.env.npm_config_message) { console.error('Error: Please provide a commit message.'); process.exit(1); }\"",
-    "add": "git add .",
-    "commit": "git commit -m \"$npm_config_message\""
+    "pub": " npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
