@@ -21,5 +21,10 @@ export * from './events/order-created-event';
 export * from './events/expiration-complete-event';
 export * from './events/payment-created-event';
 
+export * from './events/image-published-event';
+export * from './events/image-updated-event';
+export * from './events/image-deleted-event';
+export * from './events/types/image-status';
+
 export { default as logger } from './logger/logger-wrapper';
 
