@@ -5,6 +5,7 @@ export interface ImagePublishedEvent {
   data: {
     id: string;
     version: number;
+    ticketId: string;
     published_status: number;
     published_url: string;
   };
