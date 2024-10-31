@@ -9,5 +9,6 @@ export interface ImagePublishedEvent {
     ticketId: string;
     publishedStatus: ImageStatus;
     publishedUrl: string;
+    filename: string;
   };
 }
