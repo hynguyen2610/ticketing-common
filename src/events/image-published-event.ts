@@ -1,4 +1,5 @@
 import { Subjects } from './subjects';
+import { ImageStatus } from './types/image-status';
 
 export interface ImagePublishedEvent {
   subject: Subjects.ImagePublished;
@@ -6,7 +7,7 @@ export interface ImagePublishedEvent {
     id: string;
     version: number;
     ticketId: string;
-    published_status: number;
-    published_url: string;
+    publishedStatus: ImageStatus;
+    publishedUrl: string;
   };
 }
