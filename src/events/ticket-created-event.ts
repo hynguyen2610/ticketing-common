@@ -1,6 +1,6 @@
 import { Subjects } from './subjects';
 
-export interface TicketCreatedEvent extends BaseEvent {
+export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated;
   data: {
     id: string;
@@ -9,5 +9,7 @@ export interface TicketCreatedEvent extends BaseEvent {
     price: number;
     userId: string;
     images: string[];
+    traceId?: string;
+    spanId?: string;
   };
 }
