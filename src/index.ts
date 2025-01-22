@@ -26,5 +26,7 @@ export * from './events/image-updated-event';
 export * from './events/image-deleted-event';
 export * from './events/types/image-status';
 
+export * from './tracing/tracer-wrapper';
+
 export { default as logger } from './logger/logger-wrapper';
 
