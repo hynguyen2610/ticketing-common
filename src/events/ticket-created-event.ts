@@ -12,6 +12,6 @@ export interface TicketCreatedEvent {
     images: string[];
     traceId?: string;
     spanId?: string;
-    traceContext?: Context;
+    traceHeaders: Record<string, string>;
   };
 }
