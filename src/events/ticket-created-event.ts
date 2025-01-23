@@ -1,4 +1,5 @@
 import { Subjects } from './subjects';
+import { Context } from '@opentelemetry/api';
 
 export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated;
@@ -11,5 +12,6 @@ export interface TicketCreatedEvent {
     images: string[];
     traceId?: string;
     spanId?: string;
+    traceContext?: Context;
   };
 }
