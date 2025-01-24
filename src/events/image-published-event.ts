@@ -1,7 +1,8 @@
+import { BaseEvent } from './base-event';
 import { Subjects } from './subjects';
 import { ImageStatus } from './types/image-status';
 
-export interface ImagePublishedEvent {
+export interface ImagePublishedEvent extends BaseEvent {
   subject: Subjects.ImagePublished;
   data: {
     id: string;

@@ -1,7 +1,7 @@
+import { BaseEvent } from './base-event';
 import { Subjects } from './subjects';
-import { Context } from '@opentelemetry/api';
 
-export interface TicketCreatedEvent {
+export interface TicketCreatedEvent extends BaseEvent {
   subject: Subjects.TicketCreated;
   data: {
     id: string;
@@ -12,6 +12,5 @@ export interface TicketCreatedEvent {
     images: string[];
     traceId?: string;
     spanId?: string;
-    traceHeaders: Record<string, string>;
   };
 }
