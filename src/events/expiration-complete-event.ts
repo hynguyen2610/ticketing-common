@@ -4,6 +4,8 @@ export interface ExpirationCompleteEvent {
   subject: Subjects.ExpirationComplete;
   data: {
     orderId: string;
-    traceHeaders: Record<string, string>;
+    traceId?: string;
+    spanId?: string;
+    traceHeaders?: Record<string, string>;
   };
 }

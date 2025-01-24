@@ -8,6 +8,8 @@ export interface OrderCancelledEvent {
     ticket: {
       id: string;
     };
-    traceHeaders: Record<string, string>;
+    traceId?: string;
+    spanId?: string;
+    traceHeaders?: Record<string, string>;
   };
 }

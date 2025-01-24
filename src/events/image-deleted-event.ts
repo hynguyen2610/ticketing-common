@@ -6,6 +6,8 @@ export interface ImageDeletedEvent {
     id: string;
     version: number;
     filename: string;
-    traceHeaders: Record<string, string>;
+    traceId?: string;
+    spanId?: string;
+    traceHeaders?: Record<string, string>;
   };
 }

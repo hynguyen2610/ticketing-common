@@ -10,6 +10,8 @@ export interface ImagePublishedEvent {
     publishedStatus: ImageStatus;
     publishedUrl: string;
     filename: string;
+    traceId?: string;
+    spanId?: string;
     traceHeaders?: Record<string, string>;
   };
 }

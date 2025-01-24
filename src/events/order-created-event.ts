@@ -13,6 +13,8 @@ export interface OrderCreatedEvent {
       id: string;
       price: number;
     };
-    traceHeaders: Record<string, string>;
+    traceId?: string;
+    spanId?: string;
+    traceHeaders?: Record<string, string>;
   };
 }
