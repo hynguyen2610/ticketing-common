@@ -1,8 +1,7 @@
-import { BaseEvent } from './base-event';
 import { Subjects } from './subjects';
 import { ImageStatus } from './types/image-status';
 
-export interface ImagePublishedEvent extends BaseEvent {
+export interface ImagePublishedEvent {
   subject: Subjects.ImagePublished;
   data: {
     id: string;
@@ -11,5 +10,6 @@ export interface ImagePublishedEvent extends BaseEvent {
     publishedStatus: ImageStatus;
     publishedUrl: string;
     filename: string;
+    traceHeaders?: Record<string, string>;
   };
 }

@@ -10,5 +10,6 @@ export interface TicketUpdatedEvent {
     userId: string;
     orderId?: string;
     images?: string[];
+    traceHeaders: Record<string, string>;
   };
 }

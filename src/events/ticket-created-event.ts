@@ -1,7 +1,6 @@
-import { BaseEvent } from './base-event';
 import { Subjects } from './subjects';
 
-export interface TicketCreatedEvent extends BaseEvent {
+export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated;
   data: {
     id: string;
@@ -12,5 +11,6 @@ export interface TicketCreatedEvent extends BaseEvent {
     images: string[];
     traceId?: string;
     spanId?: string;
+    traceHeaders: Record<string, string>;
   };
 }

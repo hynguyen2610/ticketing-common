@@ -8,5 +8,6 @@ export interface ImageUpdatedEvent {
     ticketId: string;
     published_status: number;
     published_url: string;
+    traceHeaders: Record<string, string>;
   };
 }

@@ -7,4 +7,5 @@ export interface PaymentCreatedEvent {
     orderId: string;
     stripeId: string;
   };
+  traceHeaders: Record<string, string>;
 }
